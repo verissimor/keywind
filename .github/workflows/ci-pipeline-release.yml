@@ -27,5 +27,5 @@ jobs:
         with:
           artifacts: 'keywind-release-${{github.ref_name}}.zip'
           token: ${{ secrets.GITHUB_TOKEN }}   
+          allowUpdates: true
           
-
