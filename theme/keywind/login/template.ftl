@@ -18,7 +18,7 @@
   displayInfo=false
   displayMessage=true
   displayRequiredFields=false
-  showAnotherWayIfPresent=true
+  showAnotherWayIfPresent=false
 >
   <html>
     <head>
