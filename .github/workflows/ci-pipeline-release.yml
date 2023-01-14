@@ -20,4 +20,4 @@ jobs:
         with:
           type: 'zip'
           filename: 'keywind-release-${{github.ref}}.zip'
-          path: './theme/keywin/'
+          path: './theme/keywin/*'
