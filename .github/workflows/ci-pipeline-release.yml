@@ -22,5 +22,8 @@ jobs:
           filename: 'keywind-release-${{github.ref_name}}.zip'
           path: 'theme/keywind'
       
-      - run: ls
-      - run: ls theme/keywind
+      - name: Upload Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          artifacts: 'keywind-release-${{github.ref_name}}.zip'
+          token: ${{ secrets.GITHUB_TOKEN }}
