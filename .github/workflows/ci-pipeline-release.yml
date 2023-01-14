@@ -27,5 +27,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           file: "keywind-release-${{github.ref_name}}.zip"
+          release_id: "v${{github.ref_name}}"
           overwrite: true
           verbose: true
