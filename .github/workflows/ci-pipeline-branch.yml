@@ -1,4 +1,4 @@
-name: CI Pipeline Push & Pull Request
+name: CI Pipeline Push and Pull Request
 
 on:
   push:
