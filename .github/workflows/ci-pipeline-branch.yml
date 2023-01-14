@@ -2,9 +2,9 @@ name: CI Pipeline Push and Pull Request
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "master" ]
 
 jobs:
   build-lib:
