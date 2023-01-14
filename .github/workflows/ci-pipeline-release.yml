@@ -21,3 +21,5 @@ jobs:
           type: 'zip'
           filename: 'keywind-release-${{github.ref_name}}.zip'
           directory: 'theme/keywind'
+      
+      - run: ls
