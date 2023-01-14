@@ -19,5 +19,5 @@ jobs:
         uses: TheDoctor0/zip-release@0.7.0
         with:
           type: 'zip'
-          filename: 'keywind-release-${{github.ref}}.zip'
-          directory: './theme/keywin/'
+          filename: 'keywind-release-${{github.ref_name}}.zip'
+          directory: 'theme/keywin/'
