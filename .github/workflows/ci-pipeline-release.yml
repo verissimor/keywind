@@ -22,8 +22,10 @@ jobs:
           filename: 'keywind-release-${{github.ref_name}}.zip'
           path: 'theme/keywind'
       
-      - name: Upload Release
-        uses: ncipollo/release-action@v1.12.0
+      - uses: xresloader/upload-to-github-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          artifacts: 'keywind-release-${{github.ref_name}}.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          file: "keywind-release-${{github.ref_name}}.zip"
+          overwrite: true
+          verbose: true
