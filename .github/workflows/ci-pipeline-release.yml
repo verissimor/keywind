@@ -20,6 +20,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'keywind-release-${{github.ref_name}}.zip'
-          directory: 'theme/keywind'
+          path: 'theme/keywind'
       
       - run: ls
+      - run: ls theme/keywind
